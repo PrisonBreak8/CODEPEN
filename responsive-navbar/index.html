@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="About: Author: A.A. Golubevs">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.6.0/remixicon.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Responsive Navbar Using HTML CSS & JavaScript | With Search & Login</title>
+</head>
+
+<body>
+
+	<header class="header" id="header">
+		<nav class="nav container">
+			<a class="nav__logo" href="#">Logo</a>
+
+			<div class="nav__menu" id="nav-menu">
+				<ul class="nav__list">
+					<li class="nav__item"><a class="nav__link" href="#">Home</a></li>
+					<li class="nav__item"><a class="nav__link" href="#">About us</a></li>
+					<li class="nav__item"><a class="nav__link" href="#">Services</a></li>
+					<li class="nav__item"><a class="nav__link" href="#">Featured</a></li>
+					<li class="nav__item"><a class="nav__link" href="#">Contact me</a></li>
+				</ul>
+				<!-- Close button -->
+				<div class="nav__close" id="nav-close">
+					<i class="ri-close-line"></i>
+				</div>
+			</div>
+
+			<div class="nav__actions">
+				<!-- Search button -->
+				<i class="ri-search-line nav__search" id="search-btn"></i>
+				<!-- Login button -->
+				<i class="ri-user-line nav__login" id="login-btn"></i>
+				<!-- Toggle button -->
+				<div class="nav__toggle" id="nav-toggle">
+					<i class="ri-menu-line"></i>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<!--==================== SEARCH ====================-->
+	<div class="search" id="search">
+		<form class="search__form" action="">
+			<i class="ri-search-line search__icon"></i>
+			<input class="search__input" type="search" placeholder="What are you looking for?">
+		</form>
+		<i class="ri-close-line search__close" id="search-close"></i>
+	</div>
+
+	<!--==================== LOGIN ====================-->
+	<div class="login" id="login">
+		<form class="login__form" action="">
+			<h2 class="login__title">Log In</h2>
+
+			<div class="login__group">
+				<div class="login__item">
+					<label class="login__label" for="email">Email</label>
+					<input class="login__input" type="email" placeholder="Write your email" id="email">
+				</div>
+
+				<div class="login__item">
+					<label class="login__label" for="password">Password</label>
+					<input class="login__input" type="password" placeholder="Enter your password" id="password">
+				</div>
+			</div>
+
+			<div class="login__register">
+				<p class="login__signup">
+					You do not have an account? <a href="#">Sign up</a>
+				</p>
+
+				<a class="login__forgot" href="#">
+					You forgot your password
+				</a>
+
+				<button class="login__button" type="submit">Log In</button>
+			</div>
+		</form>
+
+		<i class="ri-close-line login__close" id="login-close"></i>
+	</div>
+
+	<main class="main">
+		<img class="main__bg" src="img/bg.jpg" alt="Background">
+	</main>
+
+	<script src="js/script.js"></script>
+</body>
+
+</html>
