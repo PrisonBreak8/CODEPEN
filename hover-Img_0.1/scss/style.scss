@@ -1,0 +1,134 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
+@import url(https://fonts.googleapis.com/css?family=Teko:700);
+
+body {
+	margin: 0;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #505050;
+}
+
+.snip *,
+.snip *:before,
+.snip *:after {
+	box-sizing: border-box;
+	transition: all 0.45s ease;
+}
+
+.snip {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	max-width: 315px;
+	min-width: 230px;
+	font-family: "Source Sans Pro", sans-serif;
+	color: #fff;
+	font-size: 16px;
+	margin: 10px;
+	text-align: left;
+	transform: translateZ(0);
+	&:hover .snip__title,
+	&:hover .snip__text {
+		transform: translateY(0);
+		opacity: 0.9;
+		transition-delay: 0.2s;
+	}
+	&::before,
+	&::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background-color: #b81212;
+		opacity: 0.5;
+		transition: all 0.45s ease;
+	}
+	&::before {
+		transform: skew(30deg) translateX(-80%);
+	}
+	&::after {
+		transform: skew(-30deg) translateX(-70%);
+	}
+	&:hover::before {
+		transform: skew(30deg) translateX(-20%);
+		transition-delay: 0.05s;
+	}
+	&:hover::after {
+		transform: skew(-30deg) translateX(-10%);
+	}
+	&:hover .snip__figcaption::before {
+		transform: skew(30deg) translateX(-40%);
+		transition-delay: 0.15s;
+	}
+	&:hover .snip__figcaption::after {
+		transform: skew(-30deg) translateX(-30%);
+		transition-delay: 0.1s;
+	}
+	// .snip__image
+	&__image {
+		backface-visibility: hidden;
+		max-width: 100%;
+		vertical-align: top;
+	}
+	// .snip__figcaption
+	&__figcaption {
+		position: absolute;
+		top: 0px;
+		bottom: 0px;
+		left: 0px;
+		right: 0px;
+		z-index: 1;
+		bottom: 0;
+		padding: 25px 40% 25px 20px;
+		&::before,
+		&::after {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background-color: #b81212;
+			box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+			content: "";
+			opacity: 0.5;
+			z-index: -1;
+		}
+		&::before {
+			transform: skew(30deg) translateX(-100%);
+		}
+		&::after {
+			transform: skew(-30deg) translateX(-90%);
+		}
+	}
+	&__title,
+	&__text {
+		margin: 0;
+		opacity: 0;
+		letter-spacing: 1px;
+	}
+	// .snip__title
+	&__title {
+		font-family: "Teko", sans-serif;
+		font-size: 36px;
+		font-weight: 700;
+		line-height: 1em;
+		text-transform: uppercase;
+	}
+	// .snip__text
+	&__text {
+		font-size: 0.9em;
+	}
+	// .snip__link
+	&__link {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		z-index: 1;
+	}
+}
