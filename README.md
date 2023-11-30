@@ -9,4 +9,4 @@
 - See my works and join me [my CODEPEN](https://codepen.io/your-work)
 
 ### My social media
-- [Linkedin](https://codepen.io/your-work)
+- [Linkedin](https://www.linkedin.com/in/artur-golubev/)
