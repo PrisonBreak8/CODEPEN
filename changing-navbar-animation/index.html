@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="About: Author: A.A. Golubevs">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Changing Navbar Style Based On Scroll using CSS & Javascript</title>
+</head>
+
+<body>
+
+	<nav class="menu" id="navbar">
+
+		<a class="brand" href="#">
+			<span class="brand__span"><ion-icon name="logo-apple"></ion-icon></span>
+			<span class="brand__span">Apple</span>
+		</a>
+
+		<ul class="menu__list">
+			<li class="menu__item" style="--i:0;">
+				<a class="menu__link" href="#">
+					<span class="menu__span">Home</span>
+					<span class="menu__span"><ion-icon name="home-outline"></ion-icon></span>
+				</a>
+			</li>
+			<li class="menu__item" style="--i:1;">
+				<a class="menu__link" href="#">
+					<span class="menu__span">Videos</span>
+					<span class="menu__span"><ion-icon name="videocam-outline"></ion-icon></span>
+				</a>
+			</li>
+			<li class="menu__item" style="--i:2;">
+				<a class="menu__link" href="#">
+					<span class="menu__span">Photos</span>
+					<span class="menu__span"><ion-icon name="camera-outline"></ion-icon></span>
+				</a>
+			</li>
+			<li class="menu__item" style="--i:3;">
+				<a class="menu__link" href="#">
+					<span class="menu__span">Team</span>
+					<span class="menu__span"><ion-icon name="people-outline"></ion-icon></span>
+				</a>
+			</li>
+			<li class="menu__item" style="--i:4;">
+				<a class="menu__link" href="#">
+					<span class="menu__span">Contact</span>
+					<span class="menu__span"><ion-icon name="mail-outline"></ion-icon></span>
+				</a>
+			</li>
+		</ul>
+
+	</nav>
+
+	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
